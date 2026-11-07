@@ -1,0 +1,25 @@
+{
+  "experiment_name": "Credit-Card-Fraud-Detection",
+  "experiment_id": "1",
+  "tracking_uri": "local MLflow SQLite store (excluded from GitHub)",
+  "database_path": "excluded local file",
+  "artifact_root": "excluded local directory",
+  "selected_model": "Random Forest",
+  "selection_rationale": "Highest validation PR-AUC (average precision); fraud recall and precision were used as tie-breakers. The test set was not used for selection.",
+  "runs": {
+    "Logistic Regression": {
+      "run_id": "27808911e5d7490eabf1e13a10752b2f",
+      "run_name": "Logistic Regression",
+      "selected": "false",
+      "model_uri": ""
+    },
+    "Random Forest": {
+      "run_id": "830e1515868e44f3b1a9a9446095eec3",
+      "run_name": "Random Forest",
+      "selected": "true",
+      "model_uri": "models:/m-af61169edae241f0951a48f028548f06"
+    }
+  },
+  "test_metrics_logged_as_metrics": false,
+  "test_metrics_json_logged_as_artifact": true
+}

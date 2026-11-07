@@ -1,0 +1,249 @@
+{
+  "source_file": "C:\\Users\\Vishal\\OneDrive\\Desktop\\Credit-Card-Fraud-Detection\\data\\raw\\creditcard.csv",
+  "original_row_count": 284807,
+  "duplicate_count_removed": 1081,
+  "duplicate_class_distribution_removed": {
+    "0": 1062,
+    "1": 19
+  },
+  "rows_in_duplicate_groups_including_first_occurrences": 1854,
+  "rows_remaining_after_deduplication": 283726,
+  "class_distribution_before_deduplication": {
+    "0": {
+      "label": "legitimate",
+      "count": 284315,
+      "percentage": 99.82725143693798
+    },
+    "1": {
+      "label": "fraud",
+      "count": 492,
+      "percentage": 0.1727485630620034
+    }
+  },
+  "class_distribution_after_deduplication": {
+    "0": {
+      "label": "legitimate",
+      "count": 283253,
+      "percentage": 99.83328986416473
+    },
+    "1": {
+      "label": "fraud",
+      "count": 473,
+      "percentage": 0.1667101358352777
+    }
+  },
+  "train_test_split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratified_by": "Class",
+    "train_dimensions_features_only": [
+      226980,
+      30
+    ],
+    "test_dimensions_features_only": [
+      56746,
+      30
+    ],
+    "train_dimensions_including_target": [
+      226980,
+      31
+    ],
+    "test_dimensions_including_target": [
+      56746,
+      31
+    ],
+    "train_class_distribution": {
+      "0": {
+        "label": "legitimate",
+        "count": 226602,
+        "percentage": 99.83346550356859
+      },
+      "1": {
+        "label": "fraud",
+        "count": 378,
+        "percentage": 0.16653449643140364
+      }
+    },
+    "test_class_distribution": {
+      "0": {
+        "label": "legitimate",
+        "count": 56651,
+        "percentage": 99.83258731892997
+      },
+      "1": {
+        "label": "fraud",
+        "count": 95,
+        "percentage": 0.16741268107003138
+      }
+    },
+    "train_test_indices_disjoint": true
+  },
+  "scaler": {
+    "type": "sklearn.preprocessing.StandardScaler",
+    "columns": [
+      "Time",
+      "Amount"
+    ],
+    "fit_on": "training data only",
+    "fit_rows": 226980,
+    "mean": {
+      "Time": 94900.22438981409,
+      "Amount": 88.38712432813462
+    },
+    "scale": {
+      "Time": 47488.10967274416,
+      "Amount": 245.76650451922737
+    },
+    "variance": {
+      "Time": 2255120560.290578,
+      "Amount": 60401.174743599404
+    },
+    "PCA_columns_scaled": false
+  },
+  "class_weights_for_future_training": {
+    "0": 0.5008340614822464,
+    "1": 300.23809523809524
+  },
+  "resampling_applied": false,
+  "missing_value_checks": {
+    "original_by_column": {
+      "Time": 0,
+      "V1": 0,
+      "V2": 0,
+      "V3": 0,
+      "V4": 0,
+      "V5": 0,
+      "V6": 0,
+      "V7": 0,
+      "V8": 0,
+      "V9": 0,
+      "V10": 0,
+      "V11": 0,
+      "V12": 0,
+      "V13": 0,
+      "V14": 0,
+      "V15": 0,
+      "V16": 0,
+      "V17": 0,
+      "V18": 0,
+      "V19": 0,
+      "V20": 0,
+      "V21": 0,
+      "V22": 0,
+      "V23": 0,
+      "V24": 0,
+      "V25": 0,
+      "V26": 0,
+      "V27": 0,
+      "V28": 0,
+      "Amount": 0,
+      "Class": 0
+    },
+    "deduplicated_by_column": {
+      "Time": 0,
+      "V1": 0,
+      "V2": 0,
+      "V3": 0,
+      "V4": 0,
+      "V5": 0,
+      "V6": 0,
+      "V7": 0,
+      "V8": 0,
+      "V9": 0,
+      "V10": 0,
+      "V11": 0,
+      "V12": 0,
+      "V13": 0,
+      "V14": 0,
+      "V15": 0,
+      "V16": 0,
+      "V17": 0,
+      "V18": 0,
+      "V19": 0,
+      "V20": 0,
+      "V21": 0,
+      "V22": 0,
+      "V23": 0,
+      "V24": 0,
+      "V25": 0,
+      "V26": 0,
+      "V27": 0,
+      "V28": 0,
+      "Amount": 0,
+      "Class": 0
+    },
+    "train_by_column": {
+      "Time": 0,
+      "V1": 0,
+      "V2": 0,
+      "V3": 0,
+      "V4": 0,
+      "V5": 0,
+      "V6": 0,
+      "V7": 0,
+      "V8": 0,
+      "V9": 0,
+      "V10": 0,
+      "V11": 0,
+      "V12": 0,
+      "V13": 0,
+      "V14": 0,
+      "V15": 0,
+      "V16": 0,
+      "V17": 0,
+      "V18": 0,
+      "V19": 0,
+      "V20": 0,
+      "V21": 0,
+      "V22": 0,
+      "V23": 0,
+      "V24": 0,
+      "V25": 0,
+      "V26": 0,
+      "V27": 0,
+      "V28": 0,
+      "Amount": 0,
+      "Class": 0
+    },
+    "test_by_column": {
+      "Time": 0,
+      "V1": 0,
+      "V2": 0,
+      "V3": 0,
+      "V4": 0,
+      "V5": 0,
+      "V6": 0,
+      "V7": 0,
+      "V8": 0,
+      "V9": 0,
+      "V10": 0,
+      "V11": 0,
+      "V12": 0,
+      "V13": 0,
+      "V14": 0,
+      "V15": 0,
+      "V16": 0,
+      "V17": 0,
+      "V18": 0,
+      "V19": 0,
+      "V20": 0,
+      "V21": 0,
+      "V22": 0,
+      "V23": 0,
+      "V24": 0,
+      "V25": 0,
+      "V26": 0,
+      "V27": 0,
+      "V28": 0,
+      "Amount": 0,
+      "Class": 0
+    },
+    "passed": true
+  },
+  "outputs": {
+    "train_csv": "C:\\Users\\Vishal\\OneDrive\\Desktop\\Credit-Card-Fraud-Detection\\data\\processed\\train.csv",
+    "test_csv": "C:\\Users\\Vishal\\OneDrive\\Desktop\\Credit-Card-Fraud-Detection\\data\\processed\\test.csv",
+    "preprocessing_bundle": "C:\\Users\\Vishal\\OneDrive\\Desktop\\Credit-Card-Fraud-Detection\\models\\preprocessing.joblib",
+    "report_json": "C:\\Users\\Vishal\\OneDrive\\Desktop\\Credit-Card-Fraud-Detection\\reports\\preprocessing\\preprocessing_report.json"
+  }
+}

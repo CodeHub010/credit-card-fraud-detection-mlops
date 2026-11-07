@@ -1,0 +1,3 @@
+model,precision,recall,f1_score,pr_auc,pr_auc_method,roc_auc,decision_threshold,confusion_matrix_labels_0_1,validation_rows,validation_class_counts
+Logistic Regression,0.05448717948717949,0.8947368421052632,0.1027190332326284,0.8135445925756909,average_precision_score,0.9748652854554745,0.5,"[[44140, 1180], [8, 68]]",45396,"{""legitimate_0"": 45320, ""fraud_1"": 76}"
+Random Forest,0.9833333333333333,0.7763157894736842,0.8676470588235294,0.8742820798158227,average_precision_score,0.9462041854415386,0.5,"[[45319, 1], [17, 59]]",45396,"{""legitimate_0"": 45320, ""fraud_1"": 76}"

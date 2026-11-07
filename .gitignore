@@ -1,0 +1,29 @@
+# Python cache and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Transaction data and local training outputs (keep source data local)
+data/raw/*
+data/processed/*
+models/*
+!models/fraud_detection_model.joblib
+!models/preprocessing.joblib
+artifacts/
+mlruns/
+mlartifacts/
+mlflow.db
+
+# Local configuration, credentials, and logs
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.log
+logs/
+
+# Notebook checkpoints and OS files
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

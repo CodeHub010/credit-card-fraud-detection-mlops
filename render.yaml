@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: credit-card-fraud-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements-api.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.5
+      - key: PYTHONUNBUFFERED
+        value: "1"

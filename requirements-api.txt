@@ -1,0 +1,8 @@
+# Match the versions used to train and serialize the committed estimator.
+fastapi==0.162.1
+uvicorn[standard]==0.54.0
+pydantic==2.14.3
+joblib==1.6.0
+numpy==2.5.4
+pandas==3.1.1
+scikit-learn==1.9.1
