@@ -1,5 +1,9 @@
 # Credit Card Fraud Detection
 
+## Live demo
+
+[Open the Credit Card Fraud Detection dashboard](https://credit-card-fraud-detection-mlops-pkjv6565lv6plygkaapkvt.streamlit.app/)
+
 This project serves an already-trained Random Forest for credit-card fraud inference. The API does not train or tune a model. It applies the saved Phase 3 `StandardScaler` to `Time` and `Amount`; PCA features `V1`–`V28` pass through unchanged.
 
 ## Run the API
